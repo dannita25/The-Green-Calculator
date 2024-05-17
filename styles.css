@@ -1,0 +1,231 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0px;
+    background-color: #f4f9f4;
+    height: 100%; /* Make sure the html and body cover full height */
+    padding: 0;
+}
+
+html {
+    height: 100%; /* Make sure the html and body cover full height */
+    margin: 0;
+    padding: 0;
+}
+
+.content { /* Adjust this class according to your main content wrapper */
+    flex: 1;  /* Allows this section to expand */
+    padding: 20px;
+}
+
+footer {
+    background-color: #ccc;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.hero-section {
+    background-color: #324851;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.actions .btn {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.benefits, .how-it-works, .testimonials, .latest-updates, .call-to-action {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e0e0e0;
+}
+
+
+
+#content {
+    min-height: calc(100vh - 60px); /* Adjust 60px based on your footer height */
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2 {
+    color: #324851;
+}
+
+p, li {
+    color: #666;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.about-calculator, .how-it-works, .benefits, .our-mission {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+}
+
+.certificates-container {
+    display: flex;            /* Enables Flexbox */
+    justify-content: space-between; /* Distributes space between the boxes */
+    align-items: flex-start;  /* Aligns items at the start of the container */
+}
+
+.certificate {
+    flex: 1;                  /* Each box will grow equally to fill the space */
+    margin: 10px;             /* Adds some space around each box */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);  /* Optional: adds shadow for better visibility */
+    padding: 20px;            /* Padding inside each box */
+    border: 1px solid #ccc;   /* Optional: adds a border around each box */
+    justify-content: center;
+    align-items: center;        /* Centers the content horizontally */ 
+    text-align: center;     
+    width: 300px;                  /* Fixed width for each partner */
+    height: 800px;
+}
+
+.certificate img {
+    width: 100%;              /* Makes image fill the container */
+    height: auto;             /* Keeps the aspect ratio of the image */
+    display: block;           /* Removes bottom margin/gap under the image */
+}
+
+.certificates-section {
+    padding: 20px;
+    margin: 10px;
+    background-color: #ffffff ;
+}
+
+h1 {
+    color: #324851;
+    margin-bottom: 20px; /* Space between the title and the logos */
+}
+
+
+.partners-container {
+    display: flex;                 /* Establishes a flex container */
+    justify-content: center;       /* Centers children horizontally in the container */
+    align-items: center;           /* Aligns children vertically */
+    flex-wrap: nowrap;             /* Prevents items from wrapping onto multiple lines */
+    overflow-x: auto;              /* Allows horizontal scrolling if content overflows */
+}
+
+.partner {
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: flex;                 /* Uses flex layout for the content inside each partner div */
+    flex-direction: column;        /* Aligns the img and text vertically */
+    justify-content: center;
+    align-items: center;        /* Centers the content horizontally */
+    text-align: center;     /* Centers the title at the top */          
+    width: 240px;                  /* Fixed width for each partner */
+    height: 200px; 
+}
+
+.partner img {
+    width: 100px;                  /* Fixed width for images */
+    margin-bottom: 10px;            /* Space between the image and the caption */
+}
+
+.partner:hover, .partner-link:hover .partner {
+    background-color: #75b5cf ;     /* Adds a hover effect */
+}
+
+.partner h4 {
+    margin-top: 8px;  /* Space between the image and name */
+    text-align: center; /* Centers the partner name */
+}
+
+.alert {
+    color: #0a0a0a;
+    background-color: #f4f9f4;
+    border-color: #0a0a0a;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Specific class for your admin panel table */
+.admin-table {
+    width: 80%; /* Adjust table width to your preference */
+    margin: 20px auto; /* Center the table horizontally and add some margin around it */
+    border-collapse: collapse; /* Collapse borders to remove space between them */
+    background-color: #fff; /* White background for better readability */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Subtle shadow for a soft 3D effect */
+}
+
+/* Styling headers and cells within the table */
+.admin-table th,
+.admin-table td {
+    border: 1px solid #ddd; /* Light grey border for a soft, yet defined look */
+    padding: 8px; /* Adequate padding for content within cells */
+    text-align: center; /* Center text for a uniform, tidy appearance */
+}
+
+/* Enhance the header cells specifically */
+.admin-table th {
+    background-color: #f9f9f9; /* Very light grey background for headers */
+    color: #333; /* Dark grey color for text provides contrast */
+}
+
+/* Style for hovering over rows to improve interactivity */
+.admin-table tr:hover {
+    background-color: #f1f1f1; /* Light grey on hover for visual feedback */
+}
+
+/* Bottom border for the last row for a clean finish */
+.admin-table tr:last-child {
+    border-bottom: 2px solid #ccc;
+}
+
+/* More pronounced header borders for definition */
+.admin-table th {
+    border-bottom: 2px solid #ccc; /* Thicker border under headers for clear division */
+}
+
+/* Ensure the table content does not feel cramped */
+.admin-table tbody tr:nth-child(odd) {
+    background-color: #fafafa; /* Zebra striping for rows */
+}
+
+.testimonials p {
+    font-family: cursive; /* Applying the Pacifico font */
+    /*font-size: 1.2em; /* Slightly larger text for emphasis */
+}
+
+
